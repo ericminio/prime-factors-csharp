@@ -12,6 +12,11 @@ namespace Tests
         {
             Text = Number + " = 2x2x3x5x5 !!!";
         }
+
+        public void AboutNumber (int number)
+        {
+
+        }
 	}
 }
 

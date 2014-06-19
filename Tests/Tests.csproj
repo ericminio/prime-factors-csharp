@@ -30,17 +30,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="NSubstitute">
-      <HintPath>packages\NSubstitute.1.7.2.0\lib\NET40\NSubstitute.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="NSubstitute">
+      <HintPath>..\packages\NSubstitute.1.7.2.0\lib\NET40\NSubstitute.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\NSubstitute.cs" />
     <Compile Include="Common\NUnit.cs" />
     <Compile Include="PrimeFactors\JournalistTest.cs" />
+    <Compile Include="PrimeFactors\Support\TheArticle.cs" />
+    <Compile Include="PrimeFactors\Support\IsATextArticle.cs" />
+    <Compile Include="PrimeFactors\Lib\Article.cs" />
+    <Compile Include="PrimeFactors\Lib\Journalist.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -49,5 +53,7 @@
   <ItemGroup>
     <Folder Include="Common\" />
     <Folder Include="PrimeFactors\" />
+    <Folder Include="PrimeFactors\Support\" />
+    <Folder Include="PrimeFactors\Lib\" />
   </ItemGroup>
 </Project>

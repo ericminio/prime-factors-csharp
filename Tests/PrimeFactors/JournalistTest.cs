@@ -6,7 +6,7 @@ namespace Tests
     [TestFixture]
     public class JournalistTest
     {
-        Journalist Claire;
+        Journalist Claire = new Journalist();
 
         [Test]
         public void CanWriteOneArticleAboutThePrimeFactorsDecomposition ()

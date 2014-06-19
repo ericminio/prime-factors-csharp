@@ -40,6 +40,7 @@
   <ItemGroup>
     <Compile Include="Common\NSubstitute.cs" />
     <Compile Include="Common\NUnit.cs" />
+    <Compile Include="PrimeFactors\JournalistTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -47,5 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
+    <Folder Include="PrimeFactors\" />
   </ItemGroup>
 </Project>

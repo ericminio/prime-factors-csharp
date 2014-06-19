@@ -14,6 +14,10 @@ namespace Tests
             Number = number;
             Text = Number + " = " + Decomposition + " !!!";
         }
+
+        public void KnowingDecomposition (System.Collections.Generic.List<int> decomposition)
+        {
+        }
 	}
 }
 

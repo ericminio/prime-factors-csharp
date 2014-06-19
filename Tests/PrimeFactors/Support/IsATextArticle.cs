@@ -7,6 +7,7 @@ namespace Tests
 	public class IsATextArticle : Constraint
 	{
         string expected;
+        TextArticle article;
 
         public IsATextArticle (string expected)
         {
@@ -20,21 +21,20 @@ namespace Tests
 
         public override bool Matches (object actual)
         {
-            this.actual = actual;
-
             if (actual == null) return false;
 
-            return true;
+            this.article = (TextArticle)actual;
+            return article.Text !=null && article.Text.Contains (expected);
         }
 
         public override void WriteDescriptionTo (MessageWriter writer)
         {
-            writer.WriteExpectedValue ("A text article containing " + expected);
+            writer.WriteExpectedValue ("A text article containing <" + expected + ">");
         }
 
         public override void WriteActualValueTo (MessageWriter writer )
         {
-            writer.WriteActualValue (actual);
+            writer.WriteActualValue ("A text article with text: <" + article.Text + ">");
         }
 	}
 }

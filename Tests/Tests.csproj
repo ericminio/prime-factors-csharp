@@ -45,6 +45,7 @@
     <Compile Include="PrimeFactors\Support\IsATextArticle.cs" />
     <Compile Include="PrimeFactors\Lib\Article.cs" />
     <Compile Include="PrimeFactors\Lib\Journalist.cs" />
+    <Compile Include="PrimeFactors\Lib\TextArticle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

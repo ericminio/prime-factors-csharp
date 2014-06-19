@@ -2,7 +2,7 @@ using System;
 using NUnit.Framework;
 using NSubstitute;
 
-namespace Tests
+namespace Common
 {
     [TestFixture]
     public class NSubstitute

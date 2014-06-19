@@ -38,11 +38,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NUnit.cs" />
-    <Compile Include="NSubstitute.cs" />
+    <Compile Include="Common\NSubstitute.cs" />
+    <Compile Include="Common\NUnit.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
   </ItemGroup>
 </Project>

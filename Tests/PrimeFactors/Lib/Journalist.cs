@@ -11,6 +11,7 @@ namespace Tests
         public void WriteAnArticleAboutTheNumber (int number)
         {
             Article.AboutNumber (number);
+            Genius.PrimeFactorsOf (number);
         }
 	}
 

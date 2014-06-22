@@ -8,7 +8,13 @@ namespace Tests
     [TestFixture]
     public class JournalistTest
     {
-        Journalist Claire = new Journalist();
+        Journalist Claire;
+
+        [SetUp]
+        public void AJournalist()
+        {
+            Claire = new Journalist();
+        }
 
         [Test]
         public void CanWriteOneArticleAboutThePrimeFactorsDecomposition ()

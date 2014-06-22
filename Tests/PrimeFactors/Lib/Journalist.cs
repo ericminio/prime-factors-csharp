@@ -6,7 +6,7 @@ namespace Tests
 	public class Journalist
 	{
         public Article Article = new TextArticle();
-        public Genius Genius;
+        public Genius Genius = new Mathematician();
 
         public void WriteAnArticleAboutTheNumber (int number)
         {

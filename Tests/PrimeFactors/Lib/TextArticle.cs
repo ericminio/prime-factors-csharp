@@ -18,7 +18,7 @@ namespace Tests
 
         public void KnowingDecomposition (List<int> decomposition)
         {
-            Decomposition = string.Join ("x", decomposition.ToArray ());
+            Decomposition = decomposition == null ? "" : string.Join ("x", decomposition);
             UpdateText ();
         }
 

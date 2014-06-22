@@ -13,12 +13,17 @@ namespace Tests
         public void AboutNumber (int number)
         {
             Number = number;
-            Text = Number + " = " + Decomposition + " !!!";
+            UpdateText ();
         }
 
         public void KnowingDecomposition (List<int> decomposition)
         {
             Decomposition = string.Join ("x", decomposition.ToArray ());
+            UpdateText ();
+        }
+
+        void UpdateText ()
+        {
             Text = Number + " = " + Decomposition + " !!!";
         }
 	}

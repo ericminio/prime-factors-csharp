@@ -26,6 +26,18 @@ namespace Tests
         {
             Assert.That (einstein.PrimeFactorsOf (2), Is.EqualTo (new List<int> { 2 }));
         }
+
+        [Test]
+        public void KnowsTheDecompositionOfThree()
+        {
+            Assert.That (einstein.PrimeFactorsOf (3), Is.EqualTo (new List<int> { 3 }));
+        }
+
+        [Test]
+        public void KnowsTheDecompositionOfEigth()
+        {
+            Assert.That (einstein.PrimeFactorsOf (8), Is.EqualTo (new List<int> { 2, 2, 2 }));
+        }
     }
 }
 

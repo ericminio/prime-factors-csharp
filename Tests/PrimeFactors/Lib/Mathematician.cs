@@ -8,7 +8,18 @@ namespace Tests
 	{
         public List<int> PrimeFactorsOf (int number)
         {
-            return new List<int> ();
+            if (number == 1) return new List<int> ();
+            return DivideGivenNumberAsMuchAsPossibleBy (2, number);
+        }
+
+        private List<int> DivideGivenNumberAsMuchAsPossibleBy (int prime, int number)
+        {
+            if (number % prime == 0) {
+                var factors = new List<int> { prime };
+                factors.AddRange (PrimeFactorsOf (number / prime));
+                return factors;
+            }
+            return DivideGivenNumberAsMuchAsPossibleBy (prime + 1, number);
         }
 	}
 }

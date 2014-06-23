@@ -8,7 +8,7 @@ namespace Tests
 	{
         public List<int> PrimeFactorsOf (int number)
         {
-            return new List<int> { 2, 2, 3, 5 ,5 };
+            return new List<int> ();
         }
 	}
 }

@@ -20,6 +20,18 @@ namespace Tests
         {
             Assert.That (Einstein.PrimeFactorsOf (1), Is.EqualTo (new List<int> ()));
         }
+
+        [Test]
+        public void KnowsThePrimeFactorsOf2 ()
+        {
+            Assert.That (Einstein.PrimeFactorsOf (2), Is.EqualTo (new List<int> { 2 } ));
+        }
+
+        [Test]
+        public void KnowsThePrimeFactorsOf8 ()
+        {
+            Assert.That (Einstein.PrimeFactorsOf (8), Is.EqualTo (new List<int> { 2, 2, 2 } ));
+        }
     }
 }
 

@@ -5,6 +5,7 @@ namespace Tests
 {
 	public interface Article
 	{
+        void AboutNumber (int number);
 	}
 }
 

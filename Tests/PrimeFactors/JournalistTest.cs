@@ -29,9 +29,9 @@ namespace Tests
         {
             var article = Substitute.For<Article> ();
             Claire.Article = article;
-            Claire.WriteAnArticleAboutTheNumber (42);
+            Claire.WriteAnArticleAboutTheNumber (64);
 
-            article.Received ().AboutNumber (42);
+            article.Received ().AboutNumber (64);
         }
 
         [Test]

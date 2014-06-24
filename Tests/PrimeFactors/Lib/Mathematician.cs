@@ -9,8 +9,14 @@ namespace Tests
         public List<int> PrimeFactorsOf (int number)
         {
             if (number == 1) return new List<int>();
-            if (number % 2 == 0) {
-                var factors = new List<int> { 2 };
+            return DivideAsMuchAsPossibleGivenNumberBy (2, number);
+        }
+
+        List<int> DivideAsMuchAsPossibleGivenNumberBy (int prime, int number)
+        {
+            if (number % prime == 0) {
+                var factors = new List<int> { prime };
+                factors.AddRange (PrimeFactorsOf (number / prime));
                 return factors;
             }
             return null;

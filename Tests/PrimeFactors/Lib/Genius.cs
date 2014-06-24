@@ -1,11 +1,12 @@
 using System;
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace Tests
 {
 	public interface Genius
 	{
-        void PrimeFactorsOf (int number);
+        List<int> PrimeFactorsOf (int number);
 	}
 }
 

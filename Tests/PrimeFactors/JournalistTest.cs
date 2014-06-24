@@ -1,6 +1,7 @@
 using System;
 using NUnit.Framework;
 using NSubstitute;
+using System.Collections.Generic;
 
 namespace Tests
 {
@@ -41,6 +42,20 @@ namespace Tests
             Claire.WriteAnArticleAboutTheNumber (42);
 
             genius.Received ().PrimeFactorsOf (42);
+        }
+
+        [Test]
+        public void UsesWhatTheGeniusSaysInTheArticle()
+        {
+            var article = Substitute.For<Article> ();
+            var genius = Substitute.For<Genius> ();
+            var decomposition = new List<int> ();
+            genius.PrimeFactorsOf (Arg.Any<int> ()).Returns (decomposition);
+            Claire.Article = article;
+            Claire.Genius = genius;
+            Claire.WriteAnArticleAboutTheNumber (Arg.Any<int>());
+
+            article.Received ().KnowingDecomposition (decomposition);
         }
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace Tests
 {
@@ -12,7 +13,7 @@ namespace Tests
             Text = number + " = ";
         }
 
-        public void KnowingDecomposition (System.Collections.Generic.List<int> decomposition)
+        public void KnowingDecomposition (List<int> decomposition)
         {
         }      
 	}

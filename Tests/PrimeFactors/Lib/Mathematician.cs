@@ -19,7 +19,7 @@ namespace Tests
                 factors.AddRange (PrimeFactorsOf (number / prime));
                 return factors;
             }
-            return null;
+            return DivideAsMuchAsPossibleGivenNumberBy(prime + 1, number);
         }
 	}
 }

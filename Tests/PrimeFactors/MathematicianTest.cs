@@ -32,6 +32,12 @@ namespace Tests
         {
             Assert.That (Einstein.PrimeFactorsOf (8), Is.EqualTo (new List<int> { 2, 2, 2 } ));
         }
+
+        [Test]
+        public void KnowsThePrimeFactorsOf300 ()
+        {
+            Assert.That (Einstein.PrimeFactorsOf (300), Is.EqualTo (new List<int> { 2, 2, 3, 5, 5 } ));
+        }
     }
 }
 

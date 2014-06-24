@@ -15,6 +15,7 @@ namespace Tests
 
         public void KnowingDecomposition (List<int> decomposition)
         {
+            Text += string.Join ("x", decomposition);
         }      
 	}
 }

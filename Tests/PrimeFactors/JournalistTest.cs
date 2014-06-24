@@ -32,6 +32,16 @@ namespace Tests
 
             article.Received ().AboutNumber (42);
         }
+
+        [Test]
+        public void AsksForHelpToAGenius()
+        {
+            var genius = Substitute.For<Genius> ();
+            Claire.Genius = genius;
+            Claire.WriteAnArticleAboutTheNumber (42);
+
+            genius.Received ().PrimeFactorsOf (42);
+        }
     }
 }
 

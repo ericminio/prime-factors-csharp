@@ -9,6 +9,7 @@ namespace Tests
 
         public void AboutNumber (int number)
         {
+            Text = number + " = ";
         }
 	}
 }

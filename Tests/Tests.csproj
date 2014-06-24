@@ -49,6 +49,7 @@
     <Compile Include="PrimeFactors\TextArticleTest.cs" />
     <Compile Include="PrimeFactors\Lib\Genius.cs" />
     <Compile Include="PrimeFactors\Lib\Mathematician.cs" />
+    <Compile Include="PrimeFactors\MathematicianTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

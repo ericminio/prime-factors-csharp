@@ -38,6 +38,7 @@ namespace Tests
         public void AsksForHelpToAGenius()
         {
             var genius = Substitute.For<Genius> ();
+            genius.PrimeFactorsOf (Arg.Any<int> ()).Returns (new List<int> ());
             Claire.Genius = genius;
             Claire.WriteAnArticleAboutTheNumber (42);
 
